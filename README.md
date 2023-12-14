@@ -32,6 +32,12 @@
 ![import](https://github.com/khushi8112/LMS/assets/142375893/da3c9cff-59ea-4ae6-beb0-bc8baa4e5829)
 ![imported_books](https://github.com/khushi8112/LMS/assets/142375893/f839aa92-0e27-45b1-aa71-1a3d0bd86dd5)
 ![search_book](https://github.com/khushi8112/LMS/assets/142375893/20799799-0377-4a20-bbf4-6d9697f5bd97)
+![add_member](https://github.com/khushi8112/LMS/assets/142375893/86cb3a34-7e13-4cf5-81a6-ff7f3e4deb9e)
+![members](https://github.com/khushi8112/LMS/assets/142375893/b51d154e-7582-407e-a51e-d35046f6a92d)
+![update_member](https://github.com/khushi8112/LMS/assets/142375893/54ffd7cd-a019-43e8-9712-cf2de614482d)
+![search_member](https://github.com/khushi8112/LMS/assets/142375893/b6c3ac64-e0e8-4d5b-90df-24914da418a5)
+
+
 
 
 
