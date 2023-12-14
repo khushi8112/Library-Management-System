@@ -4,7 +4,7 @@ from wtforms import Form,validators,StringField,FloatField,IntegerField,DateFiel
 from datetime import datetime
 import requests
 import MySQLdb
-print("Hello World")
+
 app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'localhost'
