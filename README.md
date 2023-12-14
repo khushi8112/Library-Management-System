@@ -26,6 +26,12 @@
 
 ## ScreenShots
 ![home](https://github.com/khushi8112/LMS/assets/142375893/cd39b46a-2c59-4394-9219-4ffbc5924aac)
+![add_book](https://github.com/khushi8112/LMS/assets/142375893/c6c4a58c-9a50-41c6-83a2-cbb5d89d3f0d)
+![books](https://github.com/khushi8112/LMS/assets/142375893/56a71d68-8baf-4336-aa09-ad2c27df42af)
+![book_details](https://github.com/khushi8112/LMS/assets/142375893/796ee185-2bda-42ba-85a2-4e562bafe510)
+![import](https://github.com/khushi8112/LMS/assets/142375893/da3c9cff-59ea-4ae6-beb0-bc8baa4e5829)
+![imported_books](https://github.com/khushi8112/LMS/assets/142375893/f839aa92-0e27-45b1-aa71-1a3d0bd86dd5)
+![search_book](https://github.com/khushi8112/LMS/assets/142375893/20799799-0377-4a20-bbf4-6d9697f5bd97)
 
 
 
