@@ -25,7 +25,7 @@
 ```
 
 ## ScreenShots
-
+![home](https://github.com/khushi8112/LMS/assets/142375893/cd39b46a-2c59-4394-9219-4ffbc5924aac)
 
 
 
