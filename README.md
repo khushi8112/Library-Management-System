@@ -41,6 +41,7 @@
 ![return_form](https://github.com/khushi8112/LMS/assets/142375893/936312e6-c02e-4f94-84ab-fc7375566caa)
 ![returned](https://github.com/khushi8112/LMS/assets/142375893/7c282c73-743e-49c4-b384-037950403dcf)
 ![search_t](https://github.com/khushi8112/LMS/assets/142375893/5886d220-7264-4703-8673-862e04d47fbc)
+![reports](https://github.com/khushi8112/LMS/assets/142375893/6ae270a0-dbc1-4fdc-8e26-4410ec4e10a4)
 
 
 
