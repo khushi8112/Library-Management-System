@@ -2,5 +2,5 @@ Flask
 Flask-MySQLdb
 wtforms
 requests
-MySQLdb
 mysql.connector
+MySQLdb
