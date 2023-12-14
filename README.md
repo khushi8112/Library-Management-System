@@ -19,10 +19,14 @@
 ```bash
     python3 setup.py
 ```
-5. Run app `app.py`
+4. Run app `app.py`
 ```bash
     python3 app.py
 ```
+
+## ScreenShots
+
+
 
 
 ## Conclusion
