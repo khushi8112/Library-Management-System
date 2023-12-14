@@ -4,13 +4,13 @@
 ## About
     
 <p> This project was created as part of the hiring test for Frappe. <a href='https://frappe.io/dev-hiring-test'>Dev Hiring Test for *FRAPPE*</a>
-    The Library Management System (LMS) is a web-based application developed using Flask, HTML, CSS, and Bootstrap. It facilitates the management and organization of books, members, and book lending operations in a library setting.</p>
+    The Library Management System (LMS) is a web-based application developed using Flask, HTML, CSS, and Bootstrap. It facilitates the management and organization of books, members, and book lending operations in a library setting.</p><br><br>
 
 
 ## Technology Stack
 - *Backend*: Flask (Python)
 - *Frontend*: HTML, CSS, Bootstrap
-- *Database*: MySQL
+- *Database*: MySQL<br><br>
 
 ## Getting Started
 1.
@@ -23,8 +23,10 @@
 ```bash
     python3 app.py
 ```
+<br><br>
 
-## ScreenShots
+## **Screenshots:**
+
 ![home](https://github.com/khushi8112/LMS/assets/142375893/cd39b46a-2c59-4394-9219-4ffbc5924aac)
 ![add_book](https://github.com/khushi8112/LMS/assets/142375893/c6c4a58c-9a50-41c6-83a2-cbb5d89d3f0d)
 ![books](https://github.com/khushi8112/LMS/assets/142375893/56a71d68-8baf-4336-aa09-ad2c27df42af)
@@ -38,10 +40,12 @@
 ![search_member](https://github.com/khushi8112/LMS/assets/142375893/b6c3ac64-e0e8-4d5b-90df-24914da418a5)
 ![issue_book](https://github.com/khushi8112/LMS/assets/142375893/b7f1d88f-e081-483f-839d-b3f31e804188)
 ![transactions](https://github.com/khushi8112/LMS/assets/142375893/57739154-42d4-4567-805c-7af58ebf0129)
+![member_details](https://github.com/khushi8112/LMS/assets/142375893/024ffd92-872c-4769-bbe0-bf018316609c)
 ![return_form](https://github.com/khushi8112/LMS/assets/142375893/936312e6-c02e-4f94-84ab-fc7375566caa)
 ![returned](https://github.com/khushi8112/LMS/assets/142375893/7c282c73-743e-49c4-b384-037950403dcf)
 ![search_t](https://github.com/khushi8112/LMS/assets/142375893/5886d220-7264-4703-8673-862e04d47fbc)
 ![reports](https://github.com/khushi8112/LMS/assets/142375893/6ae270a0-dbc1-4fdc-8e26-4410ec4e10a4)
+<br><br>
 
 
 
