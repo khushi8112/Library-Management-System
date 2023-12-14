@@ -1,12 +1,29 @@
 # Library-Management-System
 <hr>
-<h2>
-    About
-</h2>
+
+## About
+    
 <p> This project was created as part of the hiring test for Frappe. <a href='https://frappe.io/dev-hiring-test'>Dev Hiring Test for *FRAPPE*</a>
-    My Library Management Web Application allows a librarian to track books and their quantity, members, and transactions. (Built with Flask, Jinja, MySQL,HTML)</p>
+    The Library Management System (LMS) is a web-based application developed using Flask, HTML, CSS, and Bootstrap. It facilitates the management and organization of books, members, and book lending operations in a library setting.</p>
+
+
+## Technology Stack
+- *Backend*: Flask (Python)
+- *Frontend*: HTML, CSS, Bootstrap
+- *Database*: MySQL
 
 ## Getting Started
-1. Setup MySQL and replace host, user, password values in `setup.py` and `app.py` as required </br></br>
-2. Run setup.py file in python.<br><br>
-3. Run app app.py .
+1.
+2. Setup MySQL and replace host, user, password values in `setup.py` and `app.py` as required </br></br>
+3. Create Database and Tables using `setup.py`
+```bash
+    python3 setup.py
+```
+5. Run app `app.py`
+```bash
+    python3 app.py
+```
+
+
+## Conclusion
+The Library Management System built with Flask, HTML, CSS, and Bootstrap provides a user-friendly and efficient platform for managing library resources and operations. It streamlines book management, member administration, and lending processes, offering a seamless experience for librarians and members alike.
