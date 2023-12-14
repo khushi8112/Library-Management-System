@@ -66,7 +66,7 @@ def delete_member(id):
         mysql.connection.commit()
     except (MySQLdb.Error, MySQLdb.Warning) as e:
         print(e)
-        flash("Member could not be deleted", "danger")
+        flash("Member exists in transactions.", "danger")
         return redirect(url_for('members'))
     finally:
         cur.close()        
@@ -163,9 +163,7 @@ class AddBook(Form):
     id = StringField('Book ID', [validators.Length(min=1, max=11)])
     title = StringField('Title', [validators.Length(min=2, max=255)])
     author = StringField('Author', [validators.Length(min=2, max=255)])
-
     average_rating = FloatField('Average Rating',[validators.NumberRange(min=0, max=5)])
-    
     isbn = StringField('ISBN', [validators.Length(min=10, max=10)])
     isbn13 = StringField('ISBN13', [validators.Length(min=13, max=13)])
     language_code = StringField('Language', [validators.Length(min=1)])
@@ -388,9 +386,9 @@ def issue(id):
             return redirect('/members')
         
         cur.execute('''INSERT INTO transactions 
-                    (book_id,member_id,per_day_fee) 
-                    values(%s,%s,%s)''',
-                    [id,form.member_id.data,form.rent.data])
+                    (book_id,member_id,member_name,per_day_fee) 
+                    values(%s,%s,%s,%s)''',
+                    [id,form.member_id.data,member['name'],form.rent.data])
         
         cur.execute('''UPDATE books 
                     SET available_quantity=available_quantity-1,
@@ -404,8 +402,6 @@ def issue(id):
         flash('book issued successfully!','success')
         return redirect('/transactions')
     return render_template('issue_book.html',id=id,form=form)
-
-
 
 
 
@@ -481,8 +477,6 @@ def issue_book():
             flash('Outstanding debt is more than 500/- ','danger')
             return redirect('/members')
         name=member['name']
-        print(member)
-        print(name)
         cur.execute('''INSERT INTO transactions 
                     (book_id,member_id,member_name,per_day_fee) 
                     values(%s,%s,%s,%s)''',
@@ -598,6 +592,8 @@ def sort1(param):
             if value is None:
                 transaction[key] = "-"
     return render_template('transactions.html',transactions=transactions)
+
+
 
 if __name__ == '__main__':
     app.secret_key = "secret"

@@ -7,9 +7,9 @@ mydb = mysql.connector.connect(
 )
 
 cur = mydb.cursor()
-cur.execute("CREATE DATABASE lib;")
+cur.execute("CREATE DATABASE lms;")
 
-cur.execute("USE lib")
+cur.execute("USE lms")
 
 cur.execute('''CREATE TABLE books ( 
     id INT(11) NOT NULL AUTO_INCREMENT , 
@@ -51,7 +51,6 @@ cur.execute('''CREATE TABLE transactions (
     returned_on TIMESTAMP NULL , 
     total_charge FLOAT NULL , 
     amount_paid FLOAT NULL ,
-     
     PRIMARY KEY (id),
     FOREIGN KEY (book_id) REFERENCES books(id),
     FOREIGN KEY (member_id) REFERENCES members(id)) ENGINE = InnoDB;''')
