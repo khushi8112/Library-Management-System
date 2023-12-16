@@ -7,11 +7,11 @@ mydb = mysql.connector.connect(
 )
 
 cur = mydb.cursor()
-cur.execute("CREATE DATABASE lms;")
+cur.execute("CREATE DATABASE IF NOT EXISTS lms;")
 
 cur.execute("USE lms")
 
-cur.execute('''CREATE TABLE books ( 
+cur.execute('''CREATE TABLE IF NOT EXISTS books ( 
     id INT(11) NOT NULL AUTO_INCREMENT , 
     title VARCHAR(255) NOT NULL , 
     author VARCHAR(255) NOT NULL , 
@@ -30,7 +30,7 @@ cur.execute('''CREATE TABLE books (
     PRIMARY KEY (id));
             ''')
 
-cur.execute('''CREATE TABLE members ( 
+cur.execute('''CREATE TABLE IF NOT EXISTS members ( 
     id INT(11) NOT NULL AUTO_INCREMENT , 
     name VARCHAR(100) NOT NULL , 
     email VARCHAR(100) NOT NULL ,
@@ -41,7 +41,7 @@ cur.execute('''CREATE TABLE members (
     PRIMARY KEY (id));
 ''')
 
-cur.execute('''CREATE TABLE transactions ( 
+cur.execute('''CREATE TABLE IF NOT EXISTS transactions ( 
     id INT(11) NOT NULL AUTO_INCREMENT , 
     book_id INT(11) NOT NULL , 
     member_id INT(11) NOT NULL , 

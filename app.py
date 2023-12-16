@@ -3,7 +3,6 @@ from flask_mysqldb import MySQL
 from wtforms import Form,validators,StringField,FloatField,IntegerField,DateField,SelectField
 from datetime import datetime
 import requests
-import MySQLdb
 
 app = Flask(__name__)
 
@@ -64,8 +63,7 @@ def delete_member(id):
     try:
         cur.execute("Delete from members where id=%s",[id])
         mysql.connection.commit()
-    except (MySQLdb.Error, MySQLdb.Warning) as e:
-        print(e)
+    except:
         flash("Member exists in transactions.", "danger")
         return redirect(url_for('members'))
     finally:
@@ -220,7 +218,7 @@ class ImportBooks(Form):
     title=StringField('Title',[validators.optional(),validators.Length(min=2)])
     author=StringField('Author',[validators.optional(),validators.Length(min=2)])
     isbn=StringField('ISBN',[validators.optional(),validators.Length(min=10,max=10)])
-    publisher=StringField('publisher',[validators.optional(),validators.Length(min=2)])
+    publisher=StringField('Publisher',[validators.optional(),validators.Length(min=2)])
 
 @app.route('/import_books',methods=['GET','POST'])
 def import_book():
@@ -368,7 +366,7 @@ def issue(id):
 
     form.member_id.choices=member_list
     if request.method=='POST' and form.validate():
-        result=cur.execute('select available_quantity from books where id=%s',[id])
+        cur.execute('select available_quantity from books where id=%s',[id])
         get_book=cur.fetchone()
 
         if get_book['available_quantity']<1:

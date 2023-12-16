@@ -4,7 +4,7 @@
 ## About
     
 <p> This project was created as part of the hiring test for Frappe. <a href='https://frappe.io/dev-hiring-test'>Dev Hiring Test for *FRAPPE*</a>
-    The Library Management System (LMS) is a web-based application developed using Flask, HTML, CSS, and Bootstrap. It facilitates the management and organization of books, members, and book lending operations in a library setting.</p><br>
+    Boost library efficiency and streamline workflows with my Flask-built web application. Manage books and members with ease, automate fee calculations, and seamlessly integrate book data via Frappe API.</p><br>
 
 
 ## Technology Stack
